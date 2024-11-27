@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labirinto Literário</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romance</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fantasia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Distopia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Suspense</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">Auro</b>books</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+        <ul class="lista-menu">
+         
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ação</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Romance</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Fantasia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Distopia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Suspense</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que você desejar!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide" ><img src="img/cinco-passos-voce.jpg"
+              alt="Livro sobre apache kafka e spring boot da alura books" width="40px" height="394px"></div>
+          <div class="swiper-slide"><img src="img/coracao-grita.jpg"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/palhaco-psicanalista.jpg" alt="Livro sobre javascript assertivo da alura books" height="394px">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/não-eu-quem-fazer-feliz.jpg" alt="Livro Guia front end" height="394px"/>
+          </div>
+          <div class="swiper-slide">
+            <img src="img/diário-banana.jpg" alt="Livro sobre portugol" height="394px" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/lado-feio-amor.jpg" alt="Livro sobre acessibilidade" height="394px" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Uma família feliz</h2>
+            <p class="descrição__texto">
+              "Uma Família Feliz", do autor Raphael Montes, apresenta um thriller psicológico 
+              angustiante, cuja trama instigante é entrelaçada com diversas críticas sociais e personagens multifacetados, repletos de camadas.
+            </p>
+          </div>
+          <img src="img/Angular.jpg" class="descrição__imagem" height="200px" width="200px" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/assim-que-comeca.jpg"
+              alt="Livro sobre apache kafka e spring boot da alura books" height="394px"></div>
+          <div class="swiper-slide"><img src="img/o-homem-giz.jpg" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/o-lado-bom-do-lado-ruim.jpg" alt="Livro sobre javascript assertivo da alurabooks" height="394px">
+          </div>
+          <div class="swiper-slide"><img src="img/o-poder-do-habito.jpg" alt="Livro Guia front end" height="394px"></div>
+          <div class="swiper-slide"><img src="img/cabeca-fria.jpg" alt="Livro sobre portugol" height="394px"></div>
+          <div class="swiper-slide"><img src="img/it-coisa.jpg" alt="livro sobre acessibilidade" height="394px"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Autora do Mês</h3>
+            <h2 class="descrição__titulo-livro">Hannah Nicole</h2>
+            <p class="descrição__texto">
+              Hannah Nicole Maehrer — ou, como o TikTok a conhece, @hannahnicolemae — é autora #1 do New York Times com uma atração especial por vilões. Ela cresceu na Pensilvânia, Estados Unidos, assistindo a filmes da Disney em sua cadeira de balanço preferida, onde passou horas imaginando suas próprias histórias e criando seus próprios mundos entre as paredes verdes de sua casa. Ela manteve seus sonhos vivos enquanto se graduava em Psicologia pela Universidade Estadual da Pensilvânia, até que um dia suas aspirações a levaram a um aplicativo no seu telefone que mudou tudo. Depois de transformar sua série viral no TikTok em livro, Hannah viu o mundo que sempre sonhou se tornar realidade.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/Escritora.jpg" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Ajuda</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Meus favoritos</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Carrinho</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suporte</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Promoções</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Mais vendidos</a>
+      </li>
+      
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Conta</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Labirinto</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Editoras</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Caelum.svg" alt="Logo da Caelum" />
+        <a href="#" class="lista-rodapé__link">Alt</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/CasaDoCodigo.svg" alt="Logo da Casa do Código" />
+        <a href="#" class="lista-rodapé__link">Arqueiro</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Independentes</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Alura.svg" alt="Logo da Alura" />
+        <a href="#" class="lista-rodapé__link">Bluesky</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraEmpresas.svg" alt="Logo da AluraParaEmpresas" />
+        <a href="#" class="lista-rodapé__link">Twitter</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLATAM.svg" alt="Logo da Alura Latam" />
+        <a href="#" class="lista-rodapé__link">Watttpad</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraStart.svg" alt="Logo da Alura START" />
+        <a href="#" class="lista-rodapé__link">AO3</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/MusicDot.svg" alt="Logo da Music Dot" />
+        <a href="#" class="lista-rodapé__link">Spirit</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/AluraLingua.svg" alt="Logo da Alura Lingua" />
+        <a href="#" class="lista-rodapé__link">Biblía laranja</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/PM3.svg" alt="Logo da PM3" />
+        <a href="#" class="lista-rodapé__link">Genshin</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Comunidade</li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersTech.svg" alt="Logo do Hipsters ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Eu</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/ScubaDev.svg" alt="Logo do Scuba Dev" />
+        <a href="#" class="lista-rodapé__link">Hutao</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/LayersTech.svg" alt="Logo do Layers ponto Tech" />
+        <a href="#" class="lista-rodapé__link">Neuvillette</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/LikeABoss.svg" alt="Logo do Like a Boss" />
+        <a href="#" class="lista-rodapé__link">Mavuika</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/CarreiraSemFronteira.svg" alt="Logo do Carreira sem fronteiras" />
+        <a href="#" class="lista-rodapé__link">Lisa</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/HipstersJobs.svg" alt="Logo do Hipsters ponto jobs" />
+        <a href="#" class="lista-rodapé__link">Furina</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/GUJ.svg" alt="Logo do GUJ" />
+        <a href="#" class="lista-rodapé__link">Chasca</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
